@@ -1,39 +1,19 @@
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
-
 public class desafio_Q1{
     public static void main(String[] args) {
-        int i;
+        int i, n;
         String sc;
 
         JTextArea texto = new JTextArea(30,30);
         sc ="Escadaria";
+        n = 6;
 
-        for(i=0;i<6;i++){
-            if(i==0)
-            sc+="       *\n";
-                 
-            if(i==1)
-            sc+="     **\n";
-              
-            if(i==2)
-            sc+="    ***\n";
-              
-            if(i==3)
-            sc+="  ****\n";
-              
-            if(i==4)
-            sc+=" *****\n";
-              
-            if(i==5)
-            sc+="******\n";
-   
+        for(i=0;i<n;i++){
+            sc = ("" +  (n - 1) + "*" + i);
+            System.out.println(sc);   
         }
-
         texto.setText(sc);
-        JOptionPane.showMessageDialog(null,texto);
-        
-
+        JOptionPane.showMessageDialog(null,texto);      
     }
-
 }
