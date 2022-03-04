@@ -14,6 +14,6 @@ public class desafio_Q1{
             System.out.println(sc);   
         }
         texto.setText(sc);
-        JOptionPane.showMessageDialog(null,texto);      
+        JOptionPane.showMessageDialog(null,texto);     
     }
 }
